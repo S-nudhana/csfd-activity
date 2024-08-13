@@ -4,8 +4,11 @@ import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
-import AncientGate from "./pages/AncientGate";
 import PortalPassword from "./pages/PortalPassword";
+
+import AncientGate_1 from "./pages/AncientGate_1";
+import AncientGate_2 from "./pages/AncientGate_2";
+import AncientGate_3 from "./pages/AncientGate_3";
 
 const theme = extendTheme({
   fonts: {
@@ -16,8 +19,16 @@ const theme = extendTheme({
 
 const router = createBrowserRouter([
   {
-    path: "/ancientGate",
-    element: <AncientGate />,
+    path: "/AncientGate",
+    element: <AncientGate_1 />,
+  },
+  {
+    path: "/AnotherGateTheSecond",
+    element: <AncientGate_2 />,
+  },
+  {
+    path: "/RealLastFinalGateOMG",
+    element: <AncientGate_3 />,
   },
   {
     path: "/portalPassword",
