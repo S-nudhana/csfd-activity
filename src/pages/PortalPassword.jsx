@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react'
 
 import { IoMdCheckmarkCircleOutline, IoMdCloseCircleOutline } from "react-icons/io";
-
+import Portal from "../assets/Portal.gif"
 export default function PortalPassword() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [Answer, setAnswer] = useState('');
@@ -23,8 +23,8 @@ export default function PortalPassword() {
 
     return (
         <>
-            <Flex height={'100vh'} width={'100%'} justify={'center'} align={"center"} flexDir={'column'} fontFamily={'onesize'} gap={'30px'}>
-                <Text textAlign={'center'} fontSize={'120px'}>Portal Password</Text>
+            <Flex height={'100vh'} width={'100%'} justify={'center'} align={"center"} flexDir={'column'} fontFamily={'onesize'} gap={'30px'} backgroundSize={"cover"} backgroundImage={`url(${Portal})`}>
+                <Text textAlign={'center'} fontSize={'120px'} color={'white'}>Portal Password</Text>
                 <Input fontSize={'60px'} width={'500px'} height={'15%'} placeholder='Your Answer' value={Answer} onChange={(e) => setAnswer(e.target.value)} />
                 <Button fontSize={'50px'} mt={'20px'} width={'40%'} height={'15%'} onClick={onOpen}>Enter</Button>
             </Flex>
