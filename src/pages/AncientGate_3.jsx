@@ -54,7 +54,7 @@ export default function AncientGate_3() {
           Last_real_final_notLie Ancient Gate
         </Text>
         <Text textAlign={"center"} fontSize={"40px"} color={"red"}>
-          "42 56 72 90"
+          "90 106 122 72"
         </Text>
 
         <HStack>
